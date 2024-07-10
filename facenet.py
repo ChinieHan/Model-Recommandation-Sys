@@ -5,7 +5,6 @@ import numpy as np
 import datetime
 
 def detect_and_crop_faces(image_path):
-    # 修改输出文件夹的路径
     output_folder = f"/Users/xigua/Desktop/opencv_baidu/output_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
     os.makedirs(output_folder, exist_ok=True)
     try:
@@ -71,8 +70,7 @@ def process(image, gallery_folder):
 
 def main():
     gallery_folder = "/Users/xigua/Desktop/opencv_baidu/face"
-    image_path = '/Users/xigua/Desktop/opencv_baidu/照片素材/116.jpg'
-    # image_path = "/Users/xigua/Desktop/opencv_baidu/识别典型素材/2.jpg"
+    image_path = '/Users/xigua/Desktop/opencv_baidu/photo/116.jpg'
 
     class ImageMock:
         def __init__(self, name):
